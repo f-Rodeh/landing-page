@@ -51,17 +51,51 @@ body > div {
     font-weight: 900;
 }
 
+h2 {
+    font-size: 36px;
+    color: #1f2937;
+    padding: 0;
+    text-align: center;
+}
+
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 32px;
+    flex-wrap: wrap;
+    
+}
+
+.container.one {
     padding-top: 98px;
+    padding-bottom: 98px;
+    gap: 32px;
+}
+
+.container.one > div {
+    flex: 1;
+}
+
+.container.two {
+    flex-direction: column;
     padding-bottom: 98px;
 }
 
-.container > div {
-    flex: 1;
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    width: 150px;
+    text-align: center;
+}
+
+.card img {
+    width: 150px;
+    height: 150px;
+    border: solid 3px #3882f6;
+    border-radius: 1vw;
+    box-sizing: border-box;
 }
 
 .image {
@@ -81,11 +115,17 @@ img {
 p {
     margin: 0;
     padding: 0;
+    color: hsl(215, 22%, 28%);
+    font-size: 16px;
 }
 
 a {
     text-decoration: none;
     color: #e5e7eb;
+}
+
+h2 {
+    margin: 48px;
 }
 
 button.filled {
