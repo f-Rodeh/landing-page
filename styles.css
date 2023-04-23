@@ -11,8 +11,8 @@ body > div {
 .header {
     display: flex;
     align-items: center;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .header ul {
@@ -37,4 +37,56 @@ body > div {
 .secondary-text {
     font-size: 18px;
     color: #e5e7eb;
+}
+
+.hero > * {
+    margin: 8px 0;
+}
+
+.hero h1 {
+    padding: 0;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    padding-top: 98px;
+    padding-bottom: 98px;
+}
+
+.container > div {
+    flex: 1;
+}
+
+.image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(205, 15%, 55%);
+}
+
+img {
+    width: 30vw;
+    height: 15vw;
+    line-height: 15vw;
+    text-align: center;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+button.filled {
+    background-color: #3882f6;
+    color: #f9faf8;
+    padding: 8px 32px;
+    border-radius: 8px;
+    border: none;
+    font-weight: 900;
+    font-size: 16px;
 }
