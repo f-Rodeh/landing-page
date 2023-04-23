@@ -56,6 +56,7 @@ h2 {
     color: #1f2937;
     padding: 0;
     text-align: center;
+    margin: 48px;
 }
 
 .container {
@@ -89,6 +90,10 @@ h2 {
 .container.three > div {
     padding: 98px 0;
     width: 800px;
+}
+
+.container.four {
+    padding: 98px 0;
 }
 
 .card {
@@ -130,7 +135,7 @@ p {
 }
 
 blockquote {
-    margin-inline-end: 0;
+    margin: 0 0 0 40px;
 }
 
 blockquote p {
@@ -138,8 +143,6 @@ blockquote p {
     font-style: italic;
     font-weight: light;
     color: #1f2937;
-    margin-block-end: 24px;
-
 }
 figcaption {
     text-align: end;
@@ -154,16 +157,41 @@ a {
     color: #e5e7eb;
 }
 
-h2 {
-    margin: 48px;
+h3 {
+    font-size: 20px;
+    margin: 0;
+}
+
+button {
+    color: #f9faf8;
+    padding: 8px 32px;
+    border-radius: 8px;
+    font-weight: 900;
+    font-size: 16px;
 }
 
 button.filled {
     background-color: #3882f6;
-    color: #f9faf8;
-    padding: 8px 32px;
-    border-radius: 8px;
     border: none;
-    font-weight: 900;
-    font-size: 16px;
+}
+
+button.outlined {
+    border: 2px solid #f9faf8;
+    background: none;
+}
+
+.blue {
+    flex-basis:  800px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #3882f6;
+    border-radius: 12px;
+    color: #f9faf8;
+    margin: 0 48px;
+    padding: 48px;
+}
+.blue p {
+    color: #e5e7eb;
 }
