@@ -71,6 +71,7 @@ h2 {
     padding-top: 98px;
     padding-bottom: 98px;
     gap: 32px;
+    flex-wrap: wrap-reverse;
 }
 
 .container.one > div {
@@ -111,20 +112,21 @@ h2 {
     border: solid 3px #3882f6;
     border-radius: 1vw;
     box-sizing: border-box;
+    padding: 12px;
 }
 
 .image {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: hsl(205, 15%, 55%);
 }
 
 img {
-    width: 30vw;
-    height: 15vw;
-    line-height: 15vw;
+    width: 300px;
+    height: auto;
+    line-height: 15px;
     text-align: center;
+    object-fit: cover;
 }
 
 p {
